@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "your-project-name": {
+      "architect": {
+        "build": {
+          "options": {
+            "styles": [
+              "src/styles/variables.scss"
+            ],
+            "assets": [
+              "src/assets"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
