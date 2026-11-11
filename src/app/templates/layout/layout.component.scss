@@ -5,23 +5,23 @@
 .layout {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-small);
   width: 100%;
-  max-width: 72rem;
+  max-width: var(--content-max-width);
   margin-inline: auto;
-  padding: 1rem;
+  padding: var(--space-small);
 }
 
 @media (min-width: 48rem) {
   .layout {
-    gap: 1.5rem;
-    padding: 1.5rem;
+    gap: var(--space-medium);
+    padding: var(--space-medium);
   }
 }
 
 @media (min-width: 64rem) {
   .layout {
-    gap: 2rem;
-    padding: 2rem;
+    gap: var(--space-large);
+    padding: var(--space-large);
   }
 }

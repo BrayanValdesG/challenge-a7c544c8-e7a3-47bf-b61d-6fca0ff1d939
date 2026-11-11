@@ -4,15 +4,15 @@
 }
 
 .card {
-  padding: 1rem;
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
+  padding: var(--space-small);
+  background-color: var(--light-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
   overflow-wrap: anywhere;
 }
 
 @media (min-width: 48rem) {
   .card {
-    padding: 1.5rem;
+    padding: var(--space-medium);
   }
 }

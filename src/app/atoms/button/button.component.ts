@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'app-button',
-  template: '<button class="button">{{ text }}</button>',
+  template: '<button type="button" class="button">{{ text }}</button>',
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
-  text = 'Button';
+  @Input() text = 'Button';
 }

@@ -6,17 +6,25 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-color: #343a40;
+  background-color: var(--dark-color);
   color: #fff;
-  padding: 1rem;
+  padding: var(--space-small);
   text-align: center;
 }
 
+.header__action {
+  width: 100%;
+}
+
 @media (min-width: 48rem) {
+  .header__action {
+    width: auto;
+  }
+
   .header {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 1.5rem;
+    padding: var(--space-medium);
   }
 }

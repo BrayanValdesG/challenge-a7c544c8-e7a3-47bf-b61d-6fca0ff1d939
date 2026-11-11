@@ -8,10 +8,10 @@
   width: 100%;
   min-height: 44px;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   font: inherit;
   overflow-wrap: anywhere;
   cursor: pointer;
@@ -19,5 +19,11 @@
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-hover-color);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--primary-hover-color);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff;
 }
