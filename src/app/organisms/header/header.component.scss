@@ -1,6 +1,22 @@
+:host {
+  display: block;
+  min-width: 0;
+}
+
 .header {
+  display: flex;
+  flex-direction: column;
   background-color: #343a40;
   color: #fff;
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .header {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem;
+  }
 }

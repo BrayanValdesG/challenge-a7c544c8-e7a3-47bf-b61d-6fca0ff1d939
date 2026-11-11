@@ -1,8 +1,18 @@
+:host {
+  display: block;
+  min-width: 0;
+}
+
 .card {
-  display: inline-block;
-  padding: 20px;
+  padding: 1rem;
   background-color: #f8f9fa;
   border: 1px solid #dee2e6;
   border-radius: 5px;
-  margin: 10px;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 48rem) {
+  .card {
+    padding: 1.5rem;
+  }
 }
